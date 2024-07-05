@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: linear-gradient(45deg, #ff0000, #ff0000, #0138fd, #0138fd, #0138fd, #01f5fd, #01f5fd);
+  background-size: cover;
+  padding: 1.25rem;
+}
+
+.header-name {
+  color: gold;
+  text-shadow: 2px 2px 4px rgba(203, 33, 197, 0.999); 
+}
+
+header img {
+  height: 80px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 150px;
+  border: 5px solid rgba(255,255,255,0.5);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #00dcf9;
+  border-top: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
+}
+
+nav li {
+  flex-grow: 1;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(51, 141, 53);
+}
+
+.container{
+  padding: 3.125rem;
+}
+
+audio {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(231, 202, 40);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.div-transform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: none;
+  width: 80%;
+  max-width: 600px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card.active {
+  display: block;
+}
+
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.slider-indicators .indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-indicators .indicator.active {
+  background-color: #555;
+}
+
+footer {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
